@@ -1,0 +1,159 @@
+/* custom-styles.css */
+
+/* --- Color Palette --- */
+:root {
+    --eaquiz-primary: #381010;
+    --eaquiz-light: #f8f9fa;
+}
+
+.bg-primary-custom {
+    background-color: var(--eaquiz-primary) !important;
+}
+
+.text-primary-custom {
+    color: var(--eaquiz-primary) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--eaquiz-primary);
+    border-color: var(--eaquiz-primary);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
+}
+
+.btn-primary-custom:hover {
+    background-color: #5d1a1a; /* Slightly lighter shade on hover */
+    border-color: #5d1a1a;
+    transform: translateY(-3px) scale(1.02); /* More noticeable lift */
+    box-shadow: 0 10px 20px rgba(56, 16, 16, 0.4); /* Strong button shadow */
+}
+/* Social Sign-up Styling */
+.social-divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+.social-divider::before,
+.social-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #E5E7EB;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 16px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    border-color: #D1D5DB;
+    background-color: #F9FAFB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.social-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.google-btn {
+    color: #1f2937
+}
+
+.github-btn {
+    color: #1f2937;
+}
+
+.animated-heavy {
+    animation: heavyEntrance 0.5s cubic-bezier(.17,.84,.44,1) both;
+    transform-origin: center;
+    will-change: transform, opacity, filter;
+}
+
+.form-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+.form-control {
+    border: 2px solid var(--input-color);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+.form-control:hover {
+    border-color: var(--accent-color);
+}
+.form-control:focus {
+    outline: none;
+    border-color: var(--text-color);
+    
+}
+div:has(.form-control:focus) > .form-label {
+    background-color: var(--text-color);
+}
+/* --- Animations & Shadows --- */
+.custom-shadow {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: none;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.custom-shadow:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Extra lift on hover */
+}
+
+/* Heavy Animation for Sign In/Up Cards */
+.animate-heavy {
+    animation: fadeInScale 0.8s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Heavy Animation for Social Buttons */
+.btn-social {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-social:hover {
+    transform: scale(1.05); /* Heavy scale on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

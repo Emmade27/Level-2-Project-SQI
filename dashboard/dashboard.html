@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard - EAQUIZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="background-color: #f8f9fa;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-lg sticky-top">
+        <div class="container py-2">
+            <a class="navbar-brand text-white" href="./dashboard.html">
+                <i class="fas fa-brain fa-lg me-1"></i> <span class="logo-text">EAQUIZ</span>
+            </a>
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light py-1 px-3 btn-social" href="../index.html">
+                            <i class="fas fa-sign-out-alt me-1"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="mb-4 fw-bold text-primary-custom">Hello, [User Name]!</h2>
+        <p class="text-muted mb-5">A snapshot of your latest activity and progress.</p>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-3 custom-shadow rounded-4 card-interactive">
+                    <div class="card-body">
+                        <i class="fas fa-pencil-alt fa-3x mb-3 text-primary-custom"></i>
+                        <h5 class="card-title fw-bold">Quizzes Taken</h5>
+                        <p class="display-4 text-primary-custom">18</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary-custom btn-social">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-3 custom-shadow rounded-4 card-interactive">
+                    <div class="card-body">
+                        <i class="fas fa-trophy fa-3x mb-3 text-success"></i>
+                        <h5 class="card-title fw-bold">Current Mastery</h5>
+                        <p class="display-4 text-success">85%</p>
+                        <a href="#" class="btn btn-sm btn-outline-success btn-social">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-3 custom-shadow rounded-4">
+                    <div class="card-body">
+                        <i class="fas fa-play-circle fa-3x mb-3 text-primary-custom"></i>
+                        <h5 class="card-title fw-bold">Ready to Start?</h5>
+                        <p class="card-text text-muted">Jump into a new quiz now.</p>
+                        <a href="#" class="btn btn-primary-custom btn-lg custom-shadow btn-social">Start New Quiz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="card custom-shadow rounded-4">
+                    <div class="card-header bg-primary-custom text-white fw-bold">
+                        <i class="fas fa-history me-2"></i> Recent Activity
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            Advanced Algorithms
+                            <span class="badge rounded-pill bg-success fw-normal py-2 px-3">92%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            Frontend Fundamentals
+                            <span class="badge rounded-pill bg-warning text-dark fw-normal py-2 px-3">78%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            Introduction to Cloud
+                            <span class="badge rounded-pill bg-danger fw-normal py-2 px-3">65%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card custom-shadow rounded-4">
+                    <div class="card-header bg-primary-custom text-white fw-bold">
+                        <i class="fas fa-chart-bar me-2"></i> Overall Topic Mastery
+                    </div>
+                    <div class="card-body pt-4">
+                        <label class="mb-2 fw-medium">Web Development (85%)</label>
+                        <div class="progress mb-4" style="height: 15px;">
+                            <div class="progress-bar bg-primary-custom" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <label class="mb-2 fw-medium">Data Science (60%)</label>
+                        <div class="progress mb-4" style="height: 15px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <label class="mb-2 fw-medium">Cloud Computing (45%)</label>
+                        <div class="progress" style="height: 15px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
